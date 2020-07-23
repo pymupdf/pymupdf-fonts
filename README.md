@@ -27,4 +27,21 @@ pymupdf_fonts is a pure Python package provided as a wheel. As such it is Python
 
 # Usage and Documentation
 
-Using the fonts is documented in PyMuPDF. 
+PyMuPDF supports these fonts starting with v1.17.4. Using the fonts is documented in detail in PyMuPDF. In short, accessing the desired font buffer, do this:
+
+```python
+import pymupdf_fonts
+fontbuffer = pymupdf_fonts.myfont(code)  # suitable string 'code'
+del pymupdf_fonts  # optional
+```
+
+This maps `code` values to fonts:
+
+| code | font |
+|------|------|
+| figo | FiraGO_Regular |
+| figbo | FiraGO_Bold |
+| figit | FiraGO_Italic |
+| figbi | FiraGO_BoldItalic |
+| fimo | FiraMono_Regular |
+| fimbo | FiraMono_Bold |
