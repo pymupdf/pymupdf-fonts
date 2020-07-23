@@ -27,14 +27,18 @@ pymupdf_fonts is a pure Python package provided as a wheel. As such it is Python
 
 # Usage and Documentation
 
-PyMuPDF supports these fonts starting with v1.17.4. Using the fonts is documented in detail in PyMuPDF. In short, accessing the desired font buffer, do this:
+PyMuPDF supports these fonts rightaway. Using the fonts is documented in detail in PyMuPDF. In short, accessing the desired font buffer, do this:
 
 ```python
 import pymupdf_fonts
 fontbuffer = pymupdf_fonts.myfont(code)  # suitable string 'code'
+# Then execute page methods insertFont, insertText, insertTextbox
+# using the fontbuffer option.
+# Similarly when using the TextWriter class.
 ```
 
-This maps `code` values to fonts:
+In PyMuPDF v1.17.4 we will simplify the usage by convenience wrappers.
+The following table maps `"code"` values to fonts:
 
 | code | font |
 |------|------|
