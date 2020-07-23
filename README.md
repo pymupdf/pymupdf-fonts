@@ -32,7 +32,6 @@ PyMuPDF supports these fonts starting with v1.17.4. Using the fonts is documente
 ```python
 import pymupdf_fonts
 fontbuffer = pymupdf_fonts.myfont(code)  # suitable string 'code'
-del pymupdf_fonts  # optional
 ```
 
 This maps `code` values to fonts:
