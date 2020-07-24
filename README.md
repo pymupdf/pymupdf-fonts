@@ -37,7 +37,8 @@ fontbuffer = pymupdf_fonts.myfont(code)  # suitable string 'code'
 # Similarly when using the TextWriter class.
 ```
 
-In PyMuPDF v1.17.4 we will simplify the usage by convenience wrappers.
+In PyMuPDF v1.17.4 we will simplify the usage by convenience wrappers. E.g. to use font "Fira Mono Regular" just do this: ``font = fitz.Font("fimo")``.
+
 The following table maps `"code"` values to fonts:
 
 | code | font |
