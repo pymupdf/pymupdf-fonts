@@ -17,9 +17,10 @@ The primary motivation for this approach is two-fold: (1) keep the PyMuPDF binar
 
 To use a certain font, its corresponding Python value is imported, which automatically decompresses and decodes the font's binary image into a ``bytes`` object. This value can then be used as a fontbuffer by any PyMuPDF method which needs a font.
 
-Currently the following fonts made by Mozilla are provided:
-* **FiraGO** font family, sans serif **proportional** fonts with support for 68 languages and the following scripts: Latin, Cyrillic, Greek, Arabic, Hebrew, Thai, Georgian and Devanagari. Support for the variants **Regular**, **Bold**, **Ialic** and **Bold-Italic**. Use this font as a viable "universal" alternative to the **"Droid Sans Fallback Regular"** font, which is included in the PyMuPDF package (embedded in the binary extension module).
-* **FiraMono** font family, sans serif **mono-spaced** fonts with support for dozens of languages and the scripts Latin, Cyrillic, Greek. Supports the weights **Regular** and **Bold** (no Italic). Can be used instead of Courier for a nicer look.
+Currently the following fonts are provided:
+* **FiraGO** font family made by Mozilla.org, sans serif **proportional** fonts with support for 68 languages and the following scripts: Latin, Cyrillic, Greek, Arabic, Hebrew, Thai, Georgian and Devanagari. Support for the variants **Regular**, **Bold**, **Ialic** and **Bold-Italic**. Use this font as a viable "universal" alternative to the **"Droid Sans Fallback Regular"** font, which is included in the PyMuPDF package (embedded in the binary extension module).
+* **FiraMono** font family made by Mozilla.org, sans serif **mono-spaced** fonts with support for dozens of languages and the scripts Latin, Cyrillic, Greek. Supports the weights **Regular** and **Bold** (no Italic). Can be used instead of Courier for a nicer look.
+* **Space Mono** (new in version 1.0.1) a nice and small-sized **mono-spaced** font family. Space Mono is an original fixed-width type family designed by Colophon Foundry for Google Design. It supports a Latin Extended glyph set, enabling typesetting for English and other Western European languages. Part of Google Fonts and also licensed by the `Open Font License <https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL>`. Supports Regular, Bold, Italic and Bild-Italic.
 
 # Installation
 
@@ -48,3 +49,7 @@ The following table maps `"code"` values to fonts:
 | figbi | FiraGO_BoldItalic |
 | fimo | FiraMono_Regular |
 | fimbo | FiraMono_Bold |
+| spacemo | SpaceMono_Regular |
+| spacembo | SpaceMono_Bold |
+| spacemit | SpaceMono_Italic |
+| spacembi | SpaceMono_BoldItalic |

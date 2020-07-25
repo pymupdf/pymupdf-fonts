@@ -14,7 +14,7 @@ long_desc = "\n".join(long_dtab)
 
 setuptools.setup(
     name="pymupdf_fonts",
-    version="1.0.0",
+    version="1.0.1",
     author="Jorj McKie",
     author_email="jorj.x.mckie@outlook.de",
     description="Collection of font binaries for use in PyMuPDF",

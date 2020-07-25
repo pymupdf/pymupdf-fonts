@@ -40,6 +40,30 @@ def _fimbo():
     return FiraMono_Bold.fontbuffer
 
 
+def _spacemo():
+    from . import SpaceMono_Regular
+
+    return SpaceMono_Regular.fontbuffer
+
+
+def _spacembo():
+    from . import SpaceMono_Bold
+
+    return SpaceMono_Bold.fontbuffer
+
+
+def _spacemit():
+    from . import SpaceMono_Italic
+
+    return SpaceMono_Italic.fontbuffer
+
+
+def _spacembi():
+    from . import SpaceMono_BoldItalic
+
+    return SpaceMono_BoldItalic.fontbuffer
+
+
 fontbuffers = {
     "figo": _figo,
     "figbo": _figbo,
@@ -47,6 +71,10 @@ fontbuffers = {
     "figbi": _figbi,
     "fimo": _fimo,
     "fimbo": _fimbo,
+    "spacemo": _spacemo,
+    "spacembo": _spacembo,
+    "spacemit": _spacemit,
+    "spacembi": _spacembi,
 }
 
 
@@ -57,3 +85,10 @@ def myfont(name):
         raise ValueError(msg)
     return fontbuffers[name]()
 
+
+def fitzfont(name):
+    try:
+        import fitz
+    except ImportError:
+        raise ImportError("Install PyMuPDF to use this method.")
+    return fitz.Font(fontbuffer=myfont(name))
