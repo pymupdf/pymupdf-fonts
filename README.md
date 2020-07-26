@@ -54,3 +54,5 @@ The following table maps `"code"` values to fonts:
 | spacembo | SpaceMono_Bold |
 | spacemit | SpaceMono_Italic |
 | spacembi | SpaceMono_BoldItalic |
+
+![](https://github.com/pymupdf/pymupdf-fonts/blob/master/img-fonts.jpg)
