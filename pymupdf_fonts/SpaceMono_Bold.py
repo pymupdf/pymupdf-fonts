@@ -1,6 +1,14 @@
-# Contents of file
-# SpaceMono-Bold.ttf
 import lzma, base64
+# Contents of file 'SpaceMono-Bold.ttf'
+fontdescriptor = {
+    "name": "Space Mono Bold",
+    "size": 86740,
+    "mono": True,
+    "bold": True,
+    "italic": False,
+    "serif": True,
+    "glyphs": 730,
+}
 fontbuffer = lzma.decompress(base64.b64decode(
     b'/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4VLTjnxdAAAAUgokmX25VFU1vpqfsPg+viE9Zk'
     b'XbEwVpQdmVb2DUWIgH7B0smok4KfK9HjdfoBqAyWyepQVchlbQt1zYhYmLxAww56fJn0gY'

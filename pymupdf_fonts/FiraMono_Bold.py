@@ -1,6 +1,14 @@
-# Contents of file
-# FiraMono-Bold.otf
 import lzma, base64
+# Contents of file 'FiraMono-Bold.otf'
+fontdescriptor = {
+    "name": "Fira Mono Bold",
+    "size": 129004,
+    "mono": True,
+    "bold": True,
+    "italic": False,
+    "serif": True,
+    "glyphs": 1485,
+}
 fontbuffer = lzma.decompress(base64.b64decode(
     b'/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4aes7/5dACeVLJ4ABf0SeLTfe0KoOVjmV3vK+7'
     b'b92S83Ro2V1V61HJBDhNPzMIFYt67/HKabeAIlZxbba2mcBrfffqaFxN4ljNAYXFIMw4ad'

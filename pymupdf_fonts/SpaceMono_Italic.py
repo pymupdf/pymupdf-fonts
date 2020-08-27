@@ -1,6 +1,14 @@
-# Contents of file
-# SpaceMono-Italic.ttf
 import lzma, base64
+# Contents of file 'SpaceMono-Italic.ttf'
+fontdescriptor = {
+    "name": "Space Mono Italic",
+    "size": 103628,
+    "mono": True,
+    "bold": False,
+    "italic": True,
+    "serif": True,
+    "glyphs": 730,
+}
 fontbuffer = lzma.decompress(base64.b64decode(
     b'/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4ZTLpRVdAAAAUgokmX25VFU1vpqfsPg+viE9Zk'
     b'XcmxoeOirhUCMZskjRInxaEtYJOfKbTC2EhYLF4mVWaiabcrPK1pr2Ckay0CW9eM6k26ao'

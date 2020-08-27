@@ -1,6 +1,14 @@
-# Contents of file
-# FiraGO-BoldItalic.ttf
 import lzma, base64
+# Contents of file 'FiraGO-BoldItalic.ttf'
+fontdescriptor = {
+    "name": "FiraGO Bold Italic",
+    "size": 813028,
+    "mono": False,
+    "bold": True,
+    "italic": True,
+    "serif": True,
+    "glyphs": 4577,
+}
 fontbuffer = lzma.decompress(base64.b64decode(
     b'/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4g7b7/5dAAAAUgolAAT0b8pQAHiO0Q0xFIkWZL'
     b'e2J23vy6mLWJGkiH/Yd5sso1MGPWAswsAA0zdPU9Ik/QNkE41BqCz7tI6m6c0calzS10vN'

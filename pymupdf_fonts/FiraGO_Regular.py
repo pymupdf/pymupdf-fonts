@@ -1,6 +1,14 @@
-# Contents of file
-# FiraGO-Regular.ttf
 import lzma, base64
+# Contents of file 'FiraGO-Regular.ttf'
+fontdescriptor = {
+    "name": "FiraGO Regular",
+    "size": 804888,
+    "mono": False,
+    "bold": False,
+    "italic": False,
+    "serif": True,
+    "glyphs": 4577,
+}
 fontbuffer = lzma.decompress(base64.b64decode(
     b'/Td6WFoAAATm1rRGAgAhARYAAAB0L+Wj4jfY7/5dAAAAUgolAAT0b8pQAHiO0Q0xFIkTLi'
     b'r9FcTjY354529FDp9GkxneDfThF4/9hJg6rNSy8DdrNoahCPLjyrGZ3lsoEIPtE3LYrH8s'

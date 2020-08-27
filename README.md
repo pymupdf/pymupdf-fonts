@@ -28,34 +28,26 @@ pymupdf_fonts is a pure Python package provided as a wheel. As such it is Python
 
 # Usage and Documentation
 
-PyMuPDF supports these fonts rightaway. Using the fonts is documented in detail in PyMuPDF. In short, accessing the desired font buffer, do this:
+PyMuPDF supports these fonts rightaway. Using the fonts is documented in detail in PyMuPDF. In short, to create the desired font, execute ``font = fitz.Font("code")`` with one of the values in the ``code`` column below.
 
-```python
-import pymupdf_fonts
-fontbuffer = pymupdf_fonts.myfont(code)  # suitable string 'code'
-# Then execute page methods insertFont, insertText, insertTextbox:
-xref = page.insertFont(fontname="xxx", fontbuffer=fontbuffer)
-# using the fontbuffer option.
-# Similarly when using the TextWriter class:
-font = fitz.Font(fontbuffer=fontbuffer)
 
-```
-
-In PyMuPDF v1.17.4 we will simplify the usage by convenience wrappers. E.g. to use font "Fira Mono Regular" just do this: ``font = fitz.Font("fimo")``.
-
-The following table maps `"code"` values to fonts:
-
-| code | font |
-|------|------|
-| figo | FiraGO_Regular |
-| figbo | FiraGO_Bold |
-| figit | FiraGO_Italic |
-| figbi | FiraGO_BoldItalic |
-| fimo | FiraMono_Regular |
-| fimbo | FiraMono_Bold |
-| spacemo | SpaceMono_Regular |
-| spacembo | SpaceMono_Bold |
-| spacemit | SpaceMono_Italic |
-| spacembi | SpaceMono_BoldItalic |
-
-![](https://github.com/pymupdf/pymupdf-fonts/blob/master/img-fonts.jpg)
+| code | font | version | comment |
+|------|------|---------|---------|
+| figo | FiraGO_Regular | 1.0.0 |
+| figbo | FiraGO_Bold | 1.0.0 |
+| figit | FiraGO_Italic | 1.0.0 |
+| figbi | FiraGO_BoldItalic | 1.0.0 |
+| fimo | FiraMono_Regular | 1.0.0 |
+| fimbo | FiraMono_Bold | 1.0.0 |
+| spacemo | SpaceMono_Regular | 1.0.1 | mono-spaced
+| spacembo | SpaceMono_Bold | 1.0.1 | mono bold
+| spacemit | SpaceMono_Italic | 1.0.1 | mono italic
+| spacembi | SpaceMono_BoldItalic | 1.0.1 | mono bold-italic
+| math | Noto Sans Math Regular | 1.0.2 | math symbols |
+| music | Noto Music Regular | 1.0.2 | musical symbols |
+| symbol1 | Noto Sans Symbols Regular | 1.0.2 | replaces "symb" |
+| symbol2 | Noto Sans Symbols2 Regular | 1.0.2 | extended symbols |
+| notos | Noto Sans Regular | 1.0.3 | similar to Arial |
+| notosbi | Noto Sans Italic | 1.0.3 | 
+| notosbo | Noto Sans Bold | 1.0.3 |
+| notosbi | Noto Sans Bold Italic | 1.0.3 |
