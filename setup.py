@@ -20,7 +20,7 @@ setuptools.setup(
     description="Collection of font binaries for use in PyMuPDF",
     packages=setuptools.find_packages(),
     long_description=long_desc,
-    url="https://github.com/pymupdf/pymupdf_fonts",
+    url="https://github.com/pymupdf/pymupdf-fonts",
     classifiers=classifier,
     license="SIL OFL V1.1",
 )
