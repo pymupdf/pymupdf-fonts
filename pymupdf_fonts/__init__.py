@@ -149,6 +149,70 @@ def _notos():
     return fontbuffer
 
 
+def _ubuntu():
+    from . import Ubuntu_Regular
+
+    fontbuffer = Ubuntu_Regular.fontbuffer[:]
+    del Ubuntu_Regular
+    return fontbuffer
+
+
+def _ubuntubo():
+    from . import Ubuntu_Bold
+
+    fontbuffer = Ubuntu_Bold.fontbuffer[:]
+    del Ubuntu_Bold
+    return fontbuffer
+
+
+def _ubuntubi():
+    from . import Ubuntu_BoldItalic
+
+    fontbuffer = Ubuntu_BoldItalic.fontbuffer[:]
+    del Ubuntu_BoldItalic
+    return fontbuffer
+
+
+def _ubuntuit():
+    from . import Ubuntu_Italic
+
+    fontbuffer = Ubuntu_Italic.fontbuffer[:]
+    del Ubuntu_Italic
+    return fontbuffer
+
+
+def _ubuntm():
+    from . import UbuntuMono_Regular
+
+    fontbuffer = UbuntuMono_Regular.fontbuffer[:]
+    del UbuntuMono_Regular
+    return fontbuffer
+
+
+def _ubuntmbo():
+    from . import UbuntuMono_Bold
+
+    fontbuffer = UbuntuMono_Bold.fontbuffer[:]
+    del UbuntuMono_Bold
+    return fontbuffer
+
+
+def _ubuntmbi():
+    from . import UbuntuMono_BoldItalic
+
+    fontbuffer = UbuntuMono_BoldItalic.fontbuffer[:]
+    del UbuntuMono_BoldItalic
+    return fontbuffer
+
+
+def _ubuntmit():
+    from . import UbuntuMono_Italic
+
+    fontbuffer = UbuntuMono_Italic.fontbuffer[:]
+    del UbuntuMono_Italic
+    return fontbuffer
+
+
 fontbuffers = {
     "figbo": _figbo,
     "figo": _figo,
@@ -168,6 +232,14 @@ fontbuffers = {
     "notosbi": _notosbi,
     "notosit": _notosit,
     "notos": _notos,
+    "ubuntu": _ubuntu,
+    "ubuntubo": _ubuntubo,
+    "ubuntubi": _ubuntubi,
+    "ubuntuit": _ubuntuit,
+    "ubuntm": _ubuntm,
+    "ubuntmbo": _ubuntmbo,
+    "ubuntmbi": _ubuntmbi,
+    "ubuntmit": _ubuntmit,
 }
 
 
@@ -351,6 +423,86 @@ fontdescriptors["notos"] = {
     "italic": False,
     "serif": True,
     "glyphs": 3246,
+}
+
+fontdescriptors["ubuntu"] = {
+    "name": "Ubuntu Regular",
+    "size": 298928,
+    "mono": False,
+    "bold": False,
+    "italic": False,
+    "serif": True,
+    "glyphs": 1262,
+}
+
+fontdescriptors["ubuntubo"] = {
+    "name": "Ubuntu Bold",
+    "size": 269584,
+    "mono": False,
+    "bold": True,
+    "italic": False,
+    "serif": True,
+    "glyphs": 1262,
+}
+
+fontdescriptors["ubuntubi"] = {
+    "name": "Ubuntu Bold Italic",
+    "size": 282700,
+    "mono": False,
+    "bold": True,
+    "italic": True,
+    "serif": True,
+    "glyphs": 1266,
+}
+
+fontdescriptors["ubuntuit"] = {
+    "name": "Ubuntu Italic",
+    "size": 326292,
+    "mono": False,
+    "bold": False,
+    "italic": True,
+    "serif": True,
+    "glyphs": 1266,
+}
+
+fontdescriptors["ubuntm"] = {
+    "name": "Ubuntu Mono Regular",
+    "size": 189004,
+    "mono": True,
+    "bold": False,
+    "italic": False,
+    "serif": True,
+    "glyphs": 1289,
+}
+
+fontdescriptors["ubuntmbo"] = {
+    "name": "Ubuntu Mono Bold",
+    "size": 174008,
+    "mono": True,
+    "bold": True,
+    "italic": False,
+    "serif": True,
+    "glyphs": 1286,
+}
+
+fontdescriptors["ubuntmbi"] = {
+    "name": "Ubuntu Mono Bold Italic",
+    "size": 198228,
+    "mono": True,
+    "bold": True,
+    "italic": True,
+    "serif": True,
+    "glyphs": 1290,
+}
+
+fontdescriptors["ubuntmit"] = {
+    "name": "Ubuntu Mono Italic",
+    "size": 193384,
+    "mono": True,
+    "bold": False,
+    "italic": True,
+    "serif": True,
+    "glyphs": 1293,
 }
 
 
