@@ -38,7 +38,7 @@ pymupdf_fonts is a pure Python package provided as a wheel. As such it is Python
 
 If the package is installed, PyMuPDF supports all the fonts automatically. To use one of these fonts, simply execute ``font = fitz.Font("code")``, where ``code`` is a value from the first table column below. So this works as if the list of standard font codes ""helv", "tiro", "cour", etc. had been extended by new codes.
 
-You can then either use the ``font`` object directly in PyMuPDF's ``TextWriter`` class, or **use its buffer** in the conventional `Page.insertFont()` / `Page.insertText()` / `Page.insertTextbox()` methods like this:
+You can then either use the ``font`` object directly in PyMuPDF's ``TextWriter`` class, or **use its buffer** in the conventional `Page.insert_font()` / `Page.insert_text()` / `Page.insert_textbox()` methods like this:
 
 ```python
 page.insert_font(fontname="F0", fontbuffer=font.buffer)
