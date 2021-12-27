@@ -7,10 +7,10 @@ with open(os.path.join(setup_py_cwd, "README.md"), encoding="utf-8") as f:
 
 classifiers = [
     "Development Status :: 5 - Production/Stable",
-    "Classifier: Environment :: Console",
-    "Classifier: Intended Audience :: Developers",
-    "Classifier: Programming Language :: Python :: 3",
-    "Classifier: Topic :: Utilities",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Utilities",
 ]
 
 setuptools.setup(
