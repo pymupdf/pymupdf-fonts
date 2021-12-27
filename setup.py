@@ -1,27 +1,29 @@
 import setuptools
+import os
 
-pkg_tab = open("PKG-INFO").read().split("\n")
-long_dtab = []
-classifier = []
-for l in pkg_tab:
-    if l.startswith("Classifier: "):
-        classifier.append(l[12:])
-        continue
-    if l.startswith(" "):
-        long_dtab.append(l.strip())
-long_desc = "\n".join(long_dtab)
+setup_py_cwd = os.path.dirname(__file__)
+with open(os.path.join(setup_py_cwd, "README.md"), encoding="utf-8") as f:
+    readme = f.read()
 
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Classifier: Environment :: Console",
+    "Classifier: Intended Audience :: Developers",
+    "Classifier: Programming Language :: Python :: 3",
+    "Classifier: Topic :: Utilities",
+]
 
 setuptools.setup(
     name="pymupdf_fonts",
-    version="1.0.4",
+    version="1.0.5",
     author="Jorj McKie",
     author_email="jorj.x.mckie@outlook.de",
     description="Collection of font binaries for use in PyMuPDF",
     packages=setuptools.find_packages(),
-    long_description=long_desc,
+    long_description=readme,
+    long_description_content_type="text/markdown",
     url="https://github.com/pymupdf/pymupdf-fonts",
-    classifiers=classifier,
+    classifiers=classifiers,
     project_urls={
         "Documentation": "https://pymupdf.readthedocs.io/en/latest/font.html",
         "Download": "https://github.com/pymupdf/pymupdf-fonts/releases",

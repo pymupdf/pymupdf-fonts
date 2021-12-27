@@ -1,7 +1,7 @@
 # pymupdf-fonts
 Collection of optional fonts for PyMuPDF
 
-Release date: September 19, 2021
+Release date: December 27, 2021
 
 # Author
 
@@ -28,6 +28,7 @@ Currently the following fonts are provided:
 * **Noto Sans Symbols2 Regular** an extension for the previous.
 * **Noto Sans** a Google NOTO font family replacement for Helvetica / Arial, which support all four weights regular, bold, italics and bold-italics.
 * **Ubuntu** font families of sans-serif proportional and mono-spaced fonts, that provide a look familiar to Ubuntu users. They are licensed under a slightly different license - see below - which nonetheless offers a similar degree of freedom as the OFL.
+* **Cascadia Mono** mono-spaced font family made by Microsoft. Supports **Regular**, **Bold**, **Italic** and **Bold-Italic**. Can be used instead of Courier for a nicer look. License SIL OFL v1.1.
 
 
 # Installation
@@ -78,6 +79,10 @@ For more detail consult the PyMuPDF documentation of the [Font](https://pymupdf.
 | ubuntmbo | Ubuntu Mono Bold | 1.0.4 |
 | ubuntmbi | Ubuntu Mono Bold Italic | 1.0.4 |
 | ubuntmit | Ubuntu Mono Italic | 1.0.4 |
+| cascadia | Cascadia Mono Regular | 1.0.5 |
+| cascadiab | Cascadia Mono Bold | 1.0.5 |
+| cascadiai | Cascadia Mono Italic | 1.0.5 |
+| cascadiabi | Cascadia Mono BoldItalic | 1.0.5 |
 
 # License
 Most of the fonts above are licensed under the SIL OFL v1.1 license, which is stored as file `LICENSE.txt` in this repository.

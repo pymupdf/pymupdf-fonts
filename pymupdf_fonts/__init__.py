@@ -5,6 +5,38 @@ except ImportError:
     raise ValueError("Require lzma package")
 
 
+def _cascadia():
+    from . import CascadiaMono_Regular
+
+    fontbuffer = CascadiaMono_Regular.fontbuffer[:]
+    del CascadiaMono_Regular
+    return fontbuffer
+
+
+def _cascadiai():
+    from . import CascadiaMono_Italic
+
+    fontbuffer = CascadiaMono_Italic.fontbuffer[:]
+    del CascadiaMono_Italic
+    return fontbuffer
+
+
+def _cascadiab():
+    from . import CascadiaMono_Bold
+
+    fontbuffer = CascadiaMono_Bold.fontbuffer[:]
+    del CascadiaMono_Bold
+    return fontbuffer
+
+
+def _cascadiabi():
+    from . import CascadiaMono_BoldItalic
+
+    fontbuffer = CascadiaMono_BoldItalic.fontbuffer[:]
+    del CascadiaMono_BoldItalic
+    return fontbuffer
+
+
 def _figbo():
     from . import FiraGO_Bold
 
@@ -214,6 +246,10 @@ def _ubuntmit():
 
 
 fontbuffers = {
+    "cascadia": _cascadia,
+    "cascadiai": _cascadiai,
+    "cascadiab": _cascadiab,
+    "cascadiabi": _cascadiabi,
     "figbo": _figbo,
     "figo": _figo,
     "figbi": _figbi,
@@ -244,6 +280,46 @@ fontbuffers = {
 
 
 fontdescriptors = {}
+
+fontdescriptors["cascadia"] = {
+    "name": "Cascadia Mono Regular",
+    "size": 454048,
+    "mono": True,
+    "bold": False,
+    "italic": False,
+    "serif": True,
+    "glyphs": 3199,
+}
+
+fontdescriptors["cascadiai"] = {
+    "name": "Cascadia Mono Italic",
+    "size": 306008,
+    "mono": True,
+    "bold": False,
+    "italic": True,
+    "serif": True,
+    "glyphs": 1956,
+}
+
+fontdescriptors["cascadiab"] = {
+    "name": "Cascadia Mono Bold",
+    "size": 459644,
+    "mono": True,
+    "bold": True,
+    "italic": False,
+    "serif": True,
+    "glyphs": 3199,
+}
+
+fontdescriptors["cascadiabi"] = {
+    "name": "Cascadia Mono Bold Italic",
+    "size": 309036,
+    "mono": True,
+    "bold": True,
+    "italic": True,
+    "serif": True,
+    "glyphs": 1956,
+}
 
 fontdescriptors["figbo"] = {
     "name": "FiraGO Bold",
@@ -347,7 +423,7 @@ fontdescriptors["spacemo"] = {
 
 fontdescriptors["math"] = {
     "name": "Noto Sans Math Regular",
-    "size": 251968,
+    "size": 258796,
     "mono": False,
     "bold": False,
     "italic": False,
@@ -357,7 +433,7 @@ fontdescriptors["math"] = {
 
 fontdescriptors["music"] = {
     "name": "Noto Music Regular",
-    "size": 60824,
+    "size": 60812,
     "mono": False,
     "bold": False,
     "italic": False,
@@ -367,22 +443,22 @@ fontdescriptors["music"] = {
 
 fontdescriptors["symbol1"] = {
     "name": "Noto Sans Symbols Regular",
-    "size": 107580,
+    "size": 109696,
     "mono": False,
     "bold": False,
     "italic": False,
     "serif": True,
-    "glyphs": 1154,
+    "glyphs": 1156,
 }
 
 fontdescriptors["symbol2"] = {
     "name": "Noto Sans Symbols2 Regular",
-    "size": 318416,
+    "size": 375388,
     "mono": False,
     "bold": False,
     "italic": False,
     "serif": True,
-    "glyphs": 2277,
+    "glyphs": 2674,
 }
 
 fontdescriptors["notosbo"] = {
